@@ -1,2 +1,5 @@
-# Drum-Kit
-This JavaScript project lets you play virtual drums by either clicking on drum images or pressing corresponding keys on the keyboard.
+# Drum Kit
+
+This JavaScript project simulates a virtual drum kit, allowing users to play drums by clicking on images of drum components or pressing keys displayed within the images. 
+
+Each interaction triggers the corresponding drum sound, providing an immersive and interactive drumming experience where users can create music by playing the virtual drum set in real-time.
