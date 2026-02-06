@@ -4,7 +4,7 @@ A simple and fun **Drum Kit** web app built with **HTML, CSS, and JavaScript**.
 Play drum sounds by **clicking** on the drum buttons or using your **keyboard**.
 
 ## Live Demo
-- https://dorhaboosha.github.io/Drum-Kit/ *(enable GitHub Pages to activate)*
+- https://dorhaboosha.github.io/Drum-Kit/
 
 ## How to Play
 - Click the drum buttons with your mouse
@@ -34,6 +34,3 @@ Play drum sounds by **clicking** on the drum buttons or using your **keyboard**.
 - `index.js` – logic (click/keyboard events + sounds)
 - `sounds/` – audio files
 - `images/` – images used in the UI
-
-## License
-MIT
