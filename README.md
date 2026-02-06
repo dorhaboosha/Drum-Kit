@@ -1,5 +1,39 @@
-# Drum Kit
+# Drum Kit 🥁
 
-This JavaScript project simulates a virtual drum kit, allowing users to play drums by clicking on images of drum components or pressing keys displayed within the images. 
+A simple and fun **Drum Kit** web app built with **HTML, CSS, and JavaScript**.  
+Play drum sounds by **clicking** on the drum buttons or using your **keyboard**.
 
-Each interaction triggers the corresponding drum sound, providing an immersive and interactive drumming experience where users can create music by playing the virtual drum set in real-time.
+## Live Demo
+- https://dorhaboosha.github.io/Drum-Kit/ *(enable GitHub Pages to activate)*
+
+## How to Play
+- Click the drum buttons with your mouse
+- Or press the matching keys on your keyboard (the keys are shown on the UI)
+
+## Features
+- Mouse + keyboard support
+- Instant sound playback
+- Clean, beginner-friendly vanilla JS code
+
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## Run Locally
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/dorhaboosha/Drum-Kit.git
+   ```
+2. Open `index.html` in your browser  
+   *(Tip: use VS Code “Live Server” for auto-refresh)*
+
+## Project Structure
+- `index.html` – UI layout
+- `styles.css` – styling
+- `index.js` – logic (click/keyboard events + sounds)
+- `sounds/` – audio files
+- `images/` – images used in the UI
+
+## License
+MIT
