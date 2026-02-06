@@ -1,4 +1,9 @@
+/**
+ * Drum Kit - Interactive web drum kit that responds to both mouse clicks and keyboard input.
+ * Keys: w, a, s, d (toms), j (snare), k (crash), l (kick-bass).
+ */
 
+// Attach click handlers to all drum buttons
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
    
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
@@ -8,12 +13,17 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     });
 }
 
+// Listen for keyboard input to trigger drum sounds
 document.addEventListener("keypress", function(event){
     makeSound(event.key);
     buttonAnimation(event.key);
 });
 
 
+/**
+ * Plays the drum sound associated with the given key.
+ * @param {string} key - The key pressed (w, a, s, d, j, k, or l).
+ */
 function makeSound(key) {
     switch (key) {
             
@@ -57,8 +67,15 @@ function makeSound(key) {
     }
 }
 
+/**
+ * Applies a brief "pressed" visual effect to the drum button.
+ * @param {string} currentKey - The key/letter of the button to animate.
+ */
 function buttonAnimation(currentKey) {
     var activeButton = document.querySelector("." + currentKey);
+    if (!activeButton) {
+        return;
+    }
     activeButton.classList.add("pressed");
     setTimeout(function(){
         activeButton.classList.remove("pressed");
