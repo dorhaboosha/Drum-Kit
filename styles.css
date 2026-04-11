@@ -1,14 +1,27 @@
+/*
+ * Drum Kit — global styles
+ * Palette: deep blue-gray page (#283149), light blue text (#DBEDF3), accent pink (#DA0463).
+ * Each letter class (w, a, s, …) assigns the drum image for that pad; .drum styles the shared button chrome.
+ */
+
+/* ------------------------------------------------------------------------- */
+/* Page shell                                                                */
+/* ------------------------------------------------------------------------- */
+
 body {
   text-align: center;
   background-color: #283149;
 }
+
+/* ------------------------------------------------------------------------- */
+/* Typography                                                                */
+/* ------------------------------------------------------------------------- */
 
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
@@ -16,8 +29,12 @@ footer {
   font-family: sans-serif;
 }
 
+/* ------------------------------------------------------------------------- */
+/* Per-key drum artwork (matches button classes in index.html)               */
+/* ------------------------------------------------------------------------- */
+
 .w {
-background-image: url(./images/tom1.png);
+  background-image: url(./images/tom1.png);
 }
 
 .a {
@@ -44,15 +61,24 @@ background-image: url(./images/tom1.png);
   background-image: url(./images/kick.png);
 }
 
+/* ------------------------------------------------------------------------- */
+/* Drum pad row container                                                    */
+/* ------------------------------------------------------------------------- */
+
 .set {
   margin: 10% auto;
 }
+
+/* ------------------------------------------------------------------------- */
+/* State / utility classes (toggled from index.js while playing)             */
+/* ------------------------------------------------------------------------- */
 
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
 
+/* Applied briefly when a key is active — “pressed in” look */
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
@@ -61,6 +87,10 @@ background-image: url(./images/tom1.png);
 .red {
   color: red;
 }
+
+/* ------------------------------------------------------------------------- */
+/* Shared drum pad button appearance                                         */
+/* ------------------------------------------------------------------------- */
 
 .drum {
   outline: none;

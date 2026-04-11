@@ -1,17 +1,35 @@
 <!DOCTYPE html>
+<!--
+  Drum Kit — single-page app
+  Each drum pad is a <button> whose letter (w, a, s, d, j, k, l) matches the key
+  you press on the keyboard. Behavior and sounds are wired up in index.js; layout
+  and visuals live in styles.css.
+-->
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- Browser tab icon -->
   <link rel="icon" type="image/png" href="./images/drums.png" />
+
+  <!-- Character encoding and document title (shown in the tab) -->
   <meta charset="utf-8">
   <title>Drum Kit</title>
+
+  <!-- App styles and typography -->
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Page heading -->
   <h1 id="title">Drum 🥁 Kit</h1>
+
+  <!--
+    Drum pads: one button per key (w a s d j k l).
+    Class "drum" is used by CSS/JS to style and handle all pads consistently.
+    The inner text is the key label shown on each pad.
+  -->
   <div class="set">
     <button class="w drum">w</button>
     <button class="a drum">a</button>
@@ -22,7 +40,8 @@
     <button class="l drum">l</button>
   </div>
 
-<script src="./index.js" charset="utf-8"></script>
+  <!-- Keyboard/touch logic and audio playback (loads at end of body so the DOM exists first) -->
+  <script src="./index.js" charset="utf-8"></script>
 </body>
 
 </html>
